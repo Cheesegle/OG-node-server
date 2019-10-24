@@ -23,7 +23,7 @@ function addGa(html) {
   "  if (google_analytics_id) {",
         "var ga = [",
 "<!-- Global site tag (gtag.js) - Google Analytics -->",
-"<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139761472-1"></script>",
+"<script async src='https://www.googletagmanager.com/gtag/js?id=UA-139761472-1'></script>",
 "<script>",
   "function gtag(){dataLayer.push(arguments);}",
   "gtag('js', new Date());",

@@ -20,15 +20,14 @@ var app = express();
 var google_analytics_id = process.env.GA_ID || null;
 
 function addGa(html) {
-"<!-- Global site tag (gtag.js) - Google Analytics -->",
-"<script async src='https://www.googletagmanager.com/gtag/js?id=UA-139761472-1'></script>",
+var ga = [
+  "<script async src='https://www.googletagmanager.com/gtag/js?id=UA-139761472-1'></script>",
 "<script>",
   "window.dataLayer = window.dataLayer || [];",
   "function gtag(){dataLayer.push(arguments);}",
   "gtag('js', new Date());",
   "gtag('config', 'UA-139761472-1');",
 "</script>"
-
             ].join("\n");
         html = html.replace("</body>", ga + "\n\n</body>");
     }

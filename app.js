@@ -28,6 +28,13 @@ var ga = [
   "function gtag(){dataLayer.push(arguments);}",
   "gtag('js', new Date());",
   "gtag('config', 'UA-139761472-1');",
+"</script>",
+      "<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>",
+"<script>",
+  "(adsbygoogle = window.adsbygoogle || []).push({",
+    "google_ad_client: 'ca-pub-8702555988095160',",
+    "enable_page_level_ads: true",
+  "});",
 "</script>"
             ].join("\n");
         html = html.replace("</body>", ga + "\n\n</body>");

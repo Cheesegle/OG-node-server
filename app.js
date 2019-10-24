@@ -20,6 +20,7 @@ var app = express();
 var google_analytics_id = process.env.GA_ID || null;
 
 function addGa(html) {
+      if (google_analytics_id) {
 var ga = [
   "<script async src='https://www.googletagmanager.com/gtag/js?id=UA-139761472-1'></script>",
 "<script>",

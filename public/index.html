@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Node Unblocker</title>
+  <title>Node Server</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- header font -->
   <link href="//fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
@@ -87,7 +87,7 @@
       
       <div id="error"></div>
 
-      <form action="no-js" method="get" id="unblocker-form">
+      <form action="no-js" method="get" id="server-form">
         <p>
           URL: 
           <input type="text" id="url" name="url" autofocus="autofocus" />
@@ -95,14 +95,7 @@
         </p>
 
       </form>
-      
-
-      
-      <h3>About Node Unblocker</h3>
-      <p>Node Unblocker is a web proxy, similar to CGIProxy, PHProxy, or Glype, that allows users to evade filters and censorship and access blocked websites. </p>
-      <p>It's designed to be extremely fast and compatible: It processes the data on-the-fly rather than buffering the entire response, and it only modifies URLs when necessary - relative ones will "just work". </p>
-      <p>Node Unblocker is written in JavaScript with <a href="http://nodejs.org">node.js</a>. The source code is <a href="https://github.com/nfriedly/node-unblocker">available on github</a>.</p>
-	<div style="font-size:16px;">
+      f
 		<br>
 		<div  style="font-size:20px; color:green;">
 	   	 <a href="https://www.paypal.me/collin9ex">Donate to a broke boi.</a>
@@ -139,7 +132,7 @@ wpac_init.push({widget: 'Comment', id: 18413});
 			return document.getElementById(id);
 		}
 		
-		$('unblocker-form').onsubmit = function(){
+		$('server-form').onsubmit = function(){
 			var url = $('url').value;
 			if(url.substr(0,4) != "http"){
 				url = "http://" + url;

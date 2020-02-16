@@ -39,7 +39,7 @@ function googleAnalyticsMiddleware(data) {
 }
 
 var unblockerConfig = {
-    prefix: '/edu/',
+    prefix: '/suibndiuvhdifuhvisduhvisduvhisduhvisduhvi/',
     responseMiddleware: [
         googleAnalyticsMiddleware
     ]

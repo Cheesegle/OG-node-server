@@ -1,0 +1,7 @@
+{
+  "name": "OG Node server",
+  "description": "The OG node server",
+  "repository": "https://github.com/collin9ex/OG-node-server/",
+  "logo": "https://avatars0.githubusercontent.com/u/36419194?s=40&v=4",
+  "keywords": ["node"]
+}
